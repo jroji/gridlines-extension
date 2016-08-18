@@ -1,0 +1,39 @@
+#gridlines-container {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  pointer-events: none;
+  padding: 0;
+  margin: 0;
+  z-index: 999;
+}
+
+#gridlines-container .gridlines-container__grids {
+  border-bottom: 1px dashed gray;
+  pointer-events: none;
+  list-style: none;
+}
+
+#columnlines-container {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  pointer-events: none;
+  z-index: 999;
+  padding: 0px;
+  margin: 0px;
+  height: 100vh;
+}
+
+#columnlines-container .columnlines-container__grids {
+  width: 8.33%;
+  height: 100%;
+  background: lightblue;
+  opacity: 0.1;
+  float: left;
+  list-style: none;
+}
+
+#columnlines-container .columnlines-container__grids:nth-child(even) {
+  opacity: 0.3;
+}
